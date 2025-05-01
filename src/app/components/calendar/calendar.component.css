@@ -1,0 +1,9 @@
+.calendar-grid .col {
+    height: 60px;
+    cursor: pointer;
+  }
+  
+  .calendar-grid .col:hover {
+    background-color: #f0f0f0;
+  }
+  

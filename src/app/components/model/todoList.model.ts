@@ -1,6 +1,7 @@
 import { Todo } from "./todo.model";
 
-export class TodoList{
+// export 
+class TodoList{
     constructor(
         public title: string,
         public todoList: Todo[],

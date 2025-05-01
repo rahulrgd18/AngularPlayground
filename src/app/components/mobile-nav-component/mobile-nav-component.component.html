@@ -1,1 +1,59 @@
-<p>mobile-nav-component works!</p>
+<!-- Bottom navigation bar -->
+<div class="container-fluid bg-light border-top fixed-bottom d-block py-2">
+  <!-- d-md-none -->
+  <div class="row text-center">
+    <!-- Calendar -->
+    <div class="col">
+      <a routerLink="/calendar" class="text-dark">
+        <i class="bi bi-calendar3" style="font-size: 1.5rem;"></i>
+      </a>
+    </div>
+
+    <!-- List -->
+    <div class="col">
+      <a routerLink="/list" class="text-dark">
+        <i class="bi bi-list-task" style="font-size: 1.5rem;"></i>
+      </a>
+    </div>
+
+    <!-- Plus -->
+    <div class="col">
+      <a href="#" class="text-primary" data-bs-toggle="modal" data-bs-target="#plusModal">
+        <i class="bi bi-plus-circle-fill" style="font-size: 2rem;"></i>
+      </a>
+    </div>
+
+    <!-- Search -->
+    <div class="col">
+      <a routerLink="/search" class="text-dark">
+        <i class="bi bi-search" style="font-size: 1.5rem;"></i>
+      </a>
+    </div>
+
+    <!-- Menu -->
+    <div class="col">
+      <a routerLink="/menu" class="text-dark">
+        <i class="bi bi-list" style="font-size: 1.5rem;"></i>
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- Plus Modal -->
+<div class="modal fade" id="plusModal" tabindex="-1" aria-labelledby="plusModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content text-center">
+      <div class="modal-header">
+        <h5 class="modal-title" id="plusModalLabel">Add New</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="d-grid gap-3">
+          <a routerLink="/todo" class="btn btn-outline-primary">Todo</a>
+          <a routerLink="/notes" class="btn btn-outline-success">Notes</a>
+          <a routerLink="/pomodoro" class="btn btn-outline-danger">Pomodoro</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
