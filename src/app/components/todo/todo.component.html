@@ -9,6 +9,7 @@
         required
         type="text"
         class="form-control"
+        (keydown.enter)="addTodo()"
         placeholder="Write your todo"
       />
       <div class="text-danger mt-1" *ngIf="titleRef.invalid && titleRef.touched">
